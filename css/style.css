@@ -1,0 +1,437 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, p, ol, li, ul, body {
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+a {
+    transition: all 0,3s ease-out;
+}
+.container {
+    /*width: 1100px;*/
+    margin: auto;
+}
+
+@media screen and (max-width: 479px) {
+    .container {width: 92%;}
+}
+@media screen and (min-width: 480px) {
+    .container {width: 95%;}
+}
+@media screen and (min-width: 740px) {
+    .container {width: 95%;}
+}
+@media screen and (min-width: 960px) {
+    .container {width: 95%;}
+}
+@media screen and (min-width: 1200px) {
+    .container {width: 1100px;}
+}
+
+.headermenu {
+    background-color: rgba(72, 52, 42,0.7);
+    border-bottom: 1px solid rgba(255, 255, 255,0.4)
+
+}
+.headermenu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul li {
+    display: inline-block;
+}
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 30px 10px;
+    display: block;
+}
+.menu ul li a:hover {
+    background: rgba(255, 255, 255,0.3);
+}
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    font-family: 'Kaushan Script', cursive;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 845px) {
+    .headermenu .container {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 525px) {
+    .menu ul li {
+        display: block;
+        text-align: center;
+    }
+    .menu ul li a {
+        padding: 7px;
+        border-radius: 4px;
+        margin: 2px 0;
+    }
+}
+@media screen and (max-width: 350px) {
+    .logo {
+        font-size: 40px;
+
+    }
+}
+
+header {
+    background: url("../img/header.jpg") center center no-repeat;
+    background-size: cover;
+}
+.headerprima {
+    text-align: center;
+    color: white;
+    font-family: 'Kaushan Script', cursive;
+}
+.headerprimatext {
+    font-size: 100px;
+    border-bottom: 1px solid #ffff;
+    display: inline-block;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px black rgba(0, 0, 0,0.3);
+}
+.headerprima {
+    margin: 250px 0 50px;
+}
+.headerprima p a {
+    color: white;
+    font-size: 30px;
+}
+.headerprima p a i {
+    width: 50px;
+    margin-top: 20px;
+}
+.headerprima p a .fa-facebook:hover {
+    color: #1877F2;
+}
+.headerprima p a .fa-instagram:hover {
+    color: #E4405F;
+}
+.headerprima p a .fa-youtube:hover {
+    color: #CD201F;
+}
+
+@media screen and (max-width: 690px) {
+    .headerprimatext {
+        font-size: 13vw;
+        
+    }
+}
+
+/*section*/
+.pribeh {
+    padding: 70px 0;
+    text-align: center;
+}
+.pribeh1 {
+    font-size: 14px;
+}
+h1, h2, h3, h4 {
+    font-family: 'Kaushan Script', cursive;
+}
+h1 {
+    font-size: 55px;
+    padding-bottom: 40px;
+}
+.pribeh p {
+    line-height: 26px;
+}
+.pribehnabidka {
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+.pribehbox {
+    /*flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;*/
+    flex: 0 1 300px;
+}
+.pribehpopis h2 {
+    padding: 20px 0;
+    border-bottom: 1px solid grey;
+    display: inline-block;
+    margin-bottom: 20px
+}
+.pribehpopis p {
+    line-height: 22px;
+    padding-bottom: 15px;
+}
+.button {
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.button:hover {
+    color: #A0785D;
+    border-color: #A0785D;
+}
+.button:hover i {
+    transform: translateX(5px);
+}
+
+@media screen and (max-width: 1020px) {
+    .pribehbox img {
+        width: 90%;
+    }
+    .pribehpopis p {
+        padding: 0 10px 15px 10px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .pribehnabidka {
+        flex-direction: column;
+    }
+    .pribehbox {
+        display: flex;
+        margin-bottom: 40px;
+    }
+    .pribehbox img {
+        width: 300px;
+        height: 200px;
+    }
+    .pribehpopis {
+        padding: 0 0 20px 0;
+    }
+}
+@media screen and (max-width: 700px) {
+    .pribehbox {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    .pribehbox img {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .pribehbox img {
+        width: 94%;
+    }
+}
+
+.hneda {
+    background: #A0785D;
+    display: flex;
+    flex-wrap: wrap;
+}
+.hnedatext {
+    width: 50%;
+    text-align: right;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.hneda img {
+    width: 50%;
+}
+.pulka {
+    width: 60%;
+}
+.pulka h2 {
+    padding-bottom: 50px;
+    font-size: 30px;
+}
+.pulka p {
+    line-height: 26px;
+}
+.pulka h2:nth-of-type(2) {
+    padding-top: 70px;
+}
+.hnedyobdelnik {
+    background: rgba(160,120,93,0.5);
+    height: 100%;
+    width: 15%;
+    position: absolute;
+    top: 0;
+    right: -15%;
+}
+
+@media screen and (max-width: 1100px) {
+    .pulka {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .hneda img {
+        display: none;
+    }
+    .hnedatext {
+        width: 100%;
+    }
+    .hnedyobdelnik {
+        display: none;
+    }
+}
+
+.tip {
+    padding: 70px 0;
+}
+.tip .container {
+    display: flex;
+    justify-content: space-between;
+}
+.tipobr {
+    flex: 0 1 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.tipinfo {
+    flex: 0 1 30%;
+}
+.tipramecek {
+    background: #A0785D;
+    width: 300px;
+    height: 450px;
+    position: relative;
+}
+.tipramecek img {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+}
+.tipinfo h2 {
+    font-size: 30px;
+    padding-bottom: 50px;
+}
+.tipinfo p {
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 1110px) {
+    .tipramecek {
+        width: 40%;
+        height: 34vw;
+    }
+    .tipramecek img {
+        width: 100%;
+    }
+    .tipobr {
+        justify-content: space-evenly;
+    }
+}
+@media screen and (max-width: 800px) {
+    .tip .container {
+        flex-direction: column;
+    }
+    .tipramecek {
+        background: none;
+        margin-bottom: 200px;
+    }
+    .tipramecek img {
+        top: 0;
+        right: 0;
+
+    }
+}
+@media screen and (max-width: 500px) {
+    .tipramecek {
+        margin-bottom: 130px;
+    }
+}
+
+/*footer*/
+.pata {
+    background-color: #805F49;
+    padding: 80px 0;
+    font-size: 14px;
+    color: white;
+}
+.pataFB {
+    background-color: grey;
+    width: 340px;
+    height: 155px;
+}
+.pata .container {
+    display: flex;
+    justify-content: space-between;
+}
+.pata h3 {
+    padding-bottom: 25px;
+}
+.pata ul li {
+    line-height: 24px;
+    list-style: none;
+}
+.pata ul li a {
+    text-decoration: none;
+    color: white;
+}
+.pata ul li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+    .pataFB {
+        display: none;
+
+    }
+}
+@media screen and (min-width: 800px) {
+    .facebook {
+        display: none;
+    }
+}
+@media screen and (max-width: 420px) {
+    .pata .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .patamenu, .patakontakt {
+        margin-bottom: 60px;
+    }
+}
+
+.copy {
+    padding: 15px 0;
+    font-size: 14px;
+}
+.copy .container {
+    display: flex;
+    justify-content: space-between;
+}
+.copy a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 700;
+}
+.copy a:hover {
+    text-decoration: underline;
+    color: #A0785D;
+}
+@media screen and (max-width: 660px) {
+    .copyL a {
+        display: block;
+    }
+    .copyL span {
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    .copy .container {
+        flex-direction: column;
+    }
+    .copyL {
+        margin-bottom: 15px;
+    }
+}
